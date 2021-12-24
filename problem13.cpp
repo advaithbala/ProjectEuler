@@ -55,14 +55,14 @@ string stringAdd(string s1, string s2){
 int main(){
 
     string curLine;
-    ifstream inputFile("problem13.txt");
+    ifstream inputFile("data/problem13.txt");
     string result = "";;
 
     while(getline(inputFile, curLine)){
         result = stringAdd(curLine, result);
-        cout << curLine << endl;
-        cout << result << endl;
-        cout << endl;
+        // cout << curLine << endl;
+        // cout << result << endl;
+        // cout << endl;
     }
 
     cout << result.substr(0, 10) << endl;
